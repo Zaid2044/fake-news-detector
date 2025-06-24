@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <title>Fake News Detector</title>
 </head>
 <body>
@@ -10,15 +11,17 @@
     <p>Enter a news article below to check if it's real or fake.</p>
 
     <form action="/predict" method="post">
-        <textarea name="article_text" rows="10" cols="50" required>{{article_text or '' }}</textarea>
+        <textarea name="article_text" rows="10" cols="50" required placeholder="Paste the full article text here....">{{ article_text or '' }}</textarea>
         <br>
         <button type="submit">Analyze News</button>
     </form>
 
-    {% is prediction %}
-    <h2>Prediction Results:</h2>
-    <p>The article is predicted as <strong>{{ prediction }}</strong></p>
-    {% endif %}
+    {% if prediction %}
+    <div class="result">
+        <h2>Prediction Results:</h2>
+        <p>The article is predicted as: <strong>{{ prediction }}</strong></p>
+    </div>
+        {% endif %}
 
 </body>
 </html>
