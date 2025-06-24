@@ -8,5 +8,11 @@
 <body>
     <h1>Fake News Detection System</h1>
     <p>Enter a news article below to check if it's real or fake.</p>
+
+    <form action="/predict" method="post">
+        <textarea name="article_text" rows="10" cols="50" required></textarea>
+        <br>
+        <button type="submit">Analyze News</button>
+    </form>
 </body>
 </html>
