@@ -11,7 +11,7 @@ def home():
 def predict():
     article_text = request.form['article_text']
     prediction = predict_news(article_text)
-    return f"Received article for analysis: {prediction}"
+    return render_template('index.html', prediction=prediction, article_text=article_text)
 
 if __name__ == '__main__':
     app.run(debug=True)
