@@ -17,11 +17,11 @@
     </form>
 
     {% if prediction %}
-    <div class="result">
-        <h2>Prediction Results:</h2>
-        <p>The article is predicted as: <strong>{{ prediction }}</strong></p>
+    <div class="result" style="border-left-color: {{ color }};">
+    <h2>Prediction Result</h2>
+    <p><strong>{{ prediction }}</strong></p>
     </div>
-        {% endif %}
+    {% endif %}
 
 </body>
 </html>

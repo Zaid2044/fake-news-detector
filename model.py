@@ -18,6 +18,6 @@ def predict_news(text):
     predicted_class_id = torch.argmax(logits, dim = 1).item()
 
     if predicted_class_id == 0:
-        return "Fake"
+        return "This sounds kinda sus, fam.", "Fake"
     else:
-        return "Real"
+        return "This is giving... factual.", "Real"
