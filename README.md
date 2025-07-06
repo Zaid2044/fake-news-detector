@@ -71,3 +71,53 @@ pip install -r requirements.txt
 ```
 
 ---
+
+## ▶️ Run the App
+
+```bash
+streamlit run app.py
+```
+
+Go to: [http://localhost:8501](http://localhost:8501)
+Paste a news article or headline — the app will tell you if it’s **Real** or **Fake**.
+
+---
+
+## 📁 File Structure
+
+```
+fake-news-detector/
+├── app.py
+├── model/
+│   └── logistic_model.pkl
+├── vectorizer/
+│   └── tfidf.pkl
+├── utils/
+│   └── text_cleaner.py
+├── requirements.txt
+├── README.md
+```
+
+---
+
+## 📈 Model Pipeline
+
+* Clean & normalize text
+* Tokenize and remove stopwords
+* Convert to TF-IDF vectors
+* Predict using logistic regression
+
+---
+
+## 🧩 Future Improvements
+
+* Add SVM and ensemble models (Random Forest, XGBoost)
+* Include news source bias detection
+* Store classification history
+* Deploy to Hugging Face Spaces or Streamlit Cloud
+
+---
+
+## 🧑‍💻 Author
+
+**MOHAMMED ZAID AHMED**
