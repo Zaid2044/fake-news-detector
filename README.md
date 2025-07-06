@@ -21,3 +21,23 @@ Built as an interactive web app using Streamlit.
 
 ---
 
+## ✨ Features
+
+* 🧹 Text preprocessing (cleaning, stemming, stopword removal)
+* 🔤 TF-IDF Vectorization
+* 🤖 Logistic Regression classifier
+* 📄 Streamlit frontend for testing articles live
+* 💯 Accuracy over 92% on test set
+
+---
+
+## 🔍 Tech Stack
+
+* **Language:** Python 3.9+
+* **Libraries:** Pandas, NumPy, Scikit-learn, NLTK
+* **Frontend:** Streamlit
+* **ML Model:** Logistic Regression
+* **Vectorization:** TfidfVectorizer
+
+---
+
