@@ -41,3 +41,33 @@ Built as an interactive web app using Streamlit.
 
 ---
 
+## 📊 Performance
+
+| Metric    | Value     |
+| --------- | --------- |
+| Accuracy  | **92.2%** |
+| Precision | 93%       |
+| Recall    | 91%       |
+| F1-Score  | 92%       |
+
+---
+
+## ⚙️ Setup Instructions
+
+### ✅ Prerequisites
+
+* Python 3.9+
+* Git
+* A terminal with internet access
+
+### 📦 Installation
+
+```bash
+git clone https://github.com/Zaid2044/fake-news-detector.git
+cd fake-news-detector
+python -m venv venv
+.\venv\Scripts\activate  # or source venv/bin/activate
+pip install -r requirements.txt
+```
+
+---
