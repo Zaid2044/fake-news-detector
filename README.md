@@ -87,15 +87,16 @@ Paste a news article or headline — the app will tell you if it’s **Real** or
 
 ```
 fake-news-detector/
-├── app.py
-├── model/
-│   └── logistic_model.pkl
-├── vectorizer/
-│   └── tfidf.pkl
-├── utils/
-│   └── text_cleaner.py
-├── requirements.txt
+├── static/
+│   └── style.css
+├── templates/
+│   └── index.html
+├── .gitignore
+├── Procfile
 ├── README.md
+├── app.py
+├── model.py
+├── requirements.txt
 ```
 
 ---
